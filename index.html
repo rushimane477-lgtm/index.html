@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RM Financial Advisor</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #003366;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0055aa;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>RM Financial Advisor</h1>
+    <p>Apply for Financial Services Online</p>
+</header>
+
+<div class="container">
+    <h2>Application Form</h2>
+
+    <form action="#" method="post">
+        <label>Full Name</label>
+        <input type="text" name="name" required>
+
+        <label>Mobile Number</label>
+        <input type="tel" name="mobile" required>
+
+        <label>Email</label>
+        <input type="email" name="email">
+
+        <label>City</label>
+        <input type="text" name="city">
+
+        <label>Service Required</label>
+        <select name="service">
+            <option>Personal Loan</option>
+            <option>Business Loan</option>
+            <option>Home Loan</option>
+            <option>Credit Card</option>
+            <option>Insurance</option>
+        </select>
+
+        <label>Monthly Income</label>
+        <input type="number" name="income">
+
+        <label>Additional Details</label>
+        <textarea name="details" rows="4"></textarea>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</div>
+
+</body>
+</html>
